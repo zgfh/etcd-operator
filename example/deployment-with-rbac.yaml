@@ -1,7 +1,15 @@
+# This is your Editor pane.
 apiVersion: v1
 kind: Namespace
 metadata:
   name: etcd-operator
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: etcd-operator
+  namespace: etcd-operator
+
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRole
